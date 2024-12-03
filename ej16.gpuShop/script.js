@@ -7,7 +7,12 @@ const pieCart = tableCart.querySelector("tfoot")
 const celdaTotalArticulos = pieCart.querySelectorAll("td")[0]
 const celdaTotalPrecio = pieCart.querySelectorAll("td")[1]
 
-let cart = []
+let cart = [] //si haces lo de comprobar si hay localstorage tienes que quitar los []
+
+// if(esta el carrito en LS) cart = JSON.parse(localStorage.getItem("cart"))
+// else cart = [] // esto es para preguntar si hay algo en el local storage y lo muestre
+
+// showcart//y esto es para que si hay que te lo muestre
 
 solicitarProductos("")
 
@@ -78,7 +83,7 @@ function addToCart(gpu) {
     } else {
         //añado la GPU a mi array
         cart.push( {
-            ...gpu, //equivale a  id,titulo,precio
+            ...gpu, //equivale a  id,titulo,precio //coge toda la fila y le añades unidades
             unidades: 1
         })
         console.table(cart)

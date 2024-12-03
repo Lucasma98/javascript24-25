@@ -45,11 +45,6 @@ btnInvSel.addEventListener("click",function(){
 
 
 
-
-
-
-
-
 btnMovSel.addEventListener("click",function(){
     const liSel = mylist.querySelectorAll("li.seleccionado")
     liSel.forEach( li => {
@@ -61,16 +56,6 @@ btnMovSel.addEventListener("click",function(){
         li.remove()
     } )
 })
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -96,14 +81,6 @@ btnEmpCar.addEventListener("click",function(){
 
     //mycart.querySelectorAll("li").forEach(li => li.remove() )
 })
-
-
-
-
-
-
-
-
 
 
 
